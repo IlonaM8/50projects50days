@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+/*This is an universal selector, which means I want to apply this to everything*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
+body {
+  font-family: "Muli", "sans-serif";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+/*we desplay the container as a flexbox, it will apear a flex row - Jis children are divs*/
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/*any style that I put inside only will take effect if the screen its under 480px*/
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
