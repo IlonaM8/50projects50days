@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Roboto+Mono&display=swap");
 
 /*This is an universal selector, which means I want to apply this to everything*/
 
@@ -10,14 +10,32 @@
 
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
 body {
-  font-family: "Lato", "sans-serif";
+  font-family: "Roboto Mono", "sans-serif";
   overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  background-image: linear-gradient( #7388, #937d);
+  color: antiquewhite;
   margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media(max-width: 680px){
+  body{
+    flex-direction: column;
+  }
+}
