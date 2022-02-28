@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Muli&display=swap");
 
 /*This is an universal selector, which means I want to apply this to everything*/
 
@@ -10,9 +10,10 @@
 
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
 body {
-  font-family: "Lato", "sans-serif";
+  font-family: "Muli", "sans-serif";
   overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  background-color:#2b846f;
+  background-image: linear-gradient(90deg, #1c865a, #2b846f);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -21,3 +22,38 @@ body {
   height: 100vh;
 }
 
+h3 {
+  color: azure;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea{
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+
+}
+
+.tag{
+  background-color: #f09837;
+  color: azure;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight{
+  background-color: rgb(3, 71, 45);
+}
