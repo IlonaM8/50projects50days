@@ -2,7 +2,11 @@
 
 /*This is an universal selector, which means I want to apply this to everything*/
 
-
+:root {
+  --primary-color: #2c554c;
+  --secondary-color:rgb(66, 97, 74);
+  --joly-color: rgb(121, 167, 132);
+}
 
 * {
   box-sizing: border-box;
@@ -11,13 +15,100 @@
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
 body {
   font-family: "Lato", "sans-serif";
-  overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: var(--primary-color);
 }
 
+header{
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(134, 204, 152);
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.search::placeholder {
+  color: #5aaa90;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--joly-color);
+  box-shadow: 0 4px 5px rgba( 0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+  margin-top: 0; 
+}
+
+.movie-info span {
+  background-color: var(--primary-color);
+  padding: .25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: white;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
