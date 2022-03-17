@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
-
-/*This is an universal selector, which means I want to apply this to everything*/
 
 
 
@@ -12,12 +9,65 @@
 body {
   font-family: "Lato", "sans-serif";
   overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  background-color:  #7d5fff;
   margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+
+.kinetic {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+
+.kinetic:after, .kinetic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #fff;
+  animation: rotateA 2s linear infinite 0.5s;
+}
+
+.kinetic::before{
+  transform: rotate(90deg);
+  animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA{
+  0%, 25% {
+    transform: rotate(0deg);
+  }
+
+  50%, 75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes rotateB{
+  0%, 25% {
+    transform: rotate(90deg);
+  }
+
+  50%, 75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+
 
