@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&display=swap');
 
-/*This is an universal selector, which means I want to apply this to everything*/
 
 
 
@@ -8,16 +7,137 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+html{
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --primary-color:#fff;
+  --secondary-color:#333;
+}
+
+html.dark {
+  background-color:#111;
+  color: var(--primary-color)
+}
+
+
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
 body {
-  font-family: "Lato", "sans-serif";
+  font-family: "Heboo", "sans-serif";
   overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
   margin: 0;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+ 
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.center-point {
+  background-color: #e74c3c;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center-point::after {
+  content: '';
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.time{
+  font-size: 50px;
+
+}
+
+.date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 18px;
+  width: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}
