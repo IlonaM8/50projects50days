@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Muli&display=swap");
 
 /*This is an universal selector, which means I want to apply this to everything*/
 
@@ -10,14 +10,78 @@
 
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
 body {
-  font-family: "Lato", "sans-serif";
+  font-family: "Muli", "sans-serif";
   overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  background-image: linear-gradient(50deg, #e6f55e, #f5b847);
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color: white;
 }
 
+h2{
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container{
+background-color: rgb(42, 17, 82);
+box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+padding: 20px;
+width: 350px;
+max-width: 100%;
+}
+
+.result-container{
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+
+}
+
+.result-container #result {
+word-wrap: break-word;
+max-width: calc(100% - 40px);
+}
+
+.result-container .btn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn{
+  border: none;
+  background-color: rgb(83, 223, 95);
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn-large{
+  display: block;
+  width: 100%;
+  
+}
+
+.setting{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+
+}
