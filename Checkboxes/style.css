@@ -21,3 +21,77 @@ body {
   height: 100vh;
 }
 
+.toggle-container{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 200px;
+}
+
+.toggle{
+visibility: hidden;
+}
+
+.label{
+  width: 80px;
+  height: 40px;
+  background-color: #d0d0d0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 15px 0;
+  position: relative;
+}
+
+.toggle:checked + .label{
+  background-color: #c658e2;
+}
+
+.ball{
+  background: #fff;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  align-items: center;
+  justify-content: center;
+  animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+   animation: slideOn 0.3s linear forwards;
+}
+
+
+
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+
+  100% {
+   transform: translateX(40px) scale(1);
+  }
+}
+
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+
+  100% {
+   transform: translateX(0) scale(1);
+  }
+}
