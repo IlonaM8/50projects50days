@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:wght@200;400&display=swap");
 
 /*This is an universal selector, which means I want to apply this to everything*/
 
@@ -10,14 +10,63 @@
 
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
 body {
-  font-family: "Lato", "sans-serif";
-  overflow-x: hidden;
-  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  font-family: "Poppins", "sans-serif";
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  background-color: rgb(201, 158, 241);
 }
 
+.add{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color:rgb(240, 171, 44);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+.note{
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0,0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools{
+  background-color:rgb(240, 171, 44);
+  display: flex;
+justify-content: flex-end;
+padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
