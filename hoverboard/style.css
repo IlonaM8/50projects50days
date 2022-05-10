@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato&display=swap");
+
+/*This is an universal selector, which means I want to apply this to everything*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
+body {
+  font-family: "Lato", "sans-serif";
+  background-image: linear-gradient(90deg, #291775, #712a86);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  background-color: #e9e3e3;
+  box-shadow: 0 0 2px #fff;
+  height:16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease;
+}
+
+.square:hover{
+  transition-duration: 0s;
+}
+
+
+
+
