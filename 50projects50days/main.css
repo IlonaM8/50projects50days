@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:wght@200;400&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
 
 /*This is an universal selector, which means I want to apply this to everything*/
 
@@ -9,7 +10,7 @@
 }
 
 /* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
-body {
+/*body {
   font-family: "Poppins", "sans-serif";
   overflow-x: hidden;
   background-image: linear-gradient(90deg, #fffc5f,#e258d6);
@@ -20,150 +21,106 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}*/
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.user-form{
-width: 100%;
-max-width: 700px;
+section {
+  height: 500px;
+  background-color: white;
+  border: solid black 1px;
 }
 
-.user-form input{
-  width: 100%;
-  display: block;
-  background-color: #cf7ef5;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  font-family: inherit;
-  font-size: 1rem;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+.hero{
+background-image: linear-gradient(190deg, #fffc5f,#e258d6);
+height: 100vh;
+color: black;
+font-size: 30px;
 }
 
-.user-form input:focus{
-  outline: none;
-}
-
-.user-form input::placeholder{
-  color: rgb(202, 198, 198);
-}
-
-.card{
-  max-width: 800px;
-  background-color: #cf7ef5;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
-  display: flex;
-  padding: 3rem;
-  margin: 0 1.5rem;
-}
-
-.avatar{
-  border-radius: 50%;
-  border: 10px solid #ebe481;
-  height: 150px;
-  width: 150px;
-
-}
-.user-info{
-  color: #eee;
-  margin-left: 2rem;
-}
-
-.user-info h2{
-  margin-top: 0;
-}
-
-.user-info ul{
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-  padding: 0;
-  max-width: 400px;
-}
+footer {
+  height: 500px;
+  background-color: black;
+ }
 
 
-.user-info ul li{
-  display: flex;
-  align-items: center;
-}
+ nav {
+   display: flex;
+   justify-content: space-between;
 
-.user-info ul li strong{
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-}
+ }
 
-.repo{
+ ul{
+   display: flex;
+   list-style-type: none;
+   width: 500px;
+   justify-content: space-around;
+   font-size: 20px;
+ }
+
+ li {
   text-decoration: none;
-  color: #fff;
-  background-color: #e258d6;
-  font-size: 0.7rem;
-  padding: 0.25rem 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-}
+ }
 
-@media(max-width: 500px){
-  .card{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .user-form{
-    max-width: 400px;
-  }
-}
+ h1 {
+   font-size: 35px;
+   margin: 0;
+ }
 
 
+ p {
+   margin: 0;
+   font-size: 30px;
+   font-weight: 300;
+ }
+  
+ .hero-text{
+   margin-left: 80px;
+   margin-bottom: 200px;
+ }
 
-/*we desplay the container as a flexbox, it will apear a flex row - Jis children are divs*/
-.container {
-  display: flex;
-  width: 90vw;
-}
+ .button {
+   width: 200px;
+   height: 55px;
+   border-radius: 30px;
+   background-color:#e258d6;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 300;
+   padding-top: 5px;
+   margin-top: 20px;
 
-.panel {
-  background-size: cover auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  transition: flex 0.7s ease-in;
-}
+ }
 
-.panel h3 {
-  font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
+ .button:hover {
+   background-color: #b016cf;
+ }
+   
+ .button:active {
+   background-color: #9006ac;
+   color: white;
+ }
 
-.panel.active {
-  flex: 5;
-}
 
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-}
+ .hero-area {
+   display: flex;
+   height: 100%;
+   justify-content: space-between;
+   align-items: center;
+ }
 
-/*any style that I put inside only will take effect if the screen its under 480px*/
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
+ .socials {
+   padding-bottom: 200px;
+ }
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
-}
+ .logo {
+ height: 150px;
+ margin: 30px;
+ }
+
+ i {
+   color: white;
+   
+ }
