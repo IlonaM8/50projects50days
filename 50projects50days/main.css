@@ -28,7 +28,6 @@ body {
 }
 
 section {
-  height: 500px;
   background-color: white;
   border: solid black 1px;
 }
@@ -69,6 +68,10 @@ footer {
    margin: 0;
  }
 
+ h2 {
+  font-size: 25px;
+}
+
 
  p {
    margin: 0;
@@ -85,17 +88,18 @@ footer {
    width: 200px;
    height: 55px;
    border-radius: 30px;
-   background-color:#e258d6;
+   background-color:#faf876;
    text-align: center;
    font-size: 30px;
    font-weight: 300;
    padding-top: 5px;
    margin-top: 20px;
+  
 
  }
 
  .button:hover {
-   background-color: #b016cf;
+   background-color: #fffc5f;
  }
    
  .button:active {
@@ -121,6 +125,23 @@ footer {
  }
 
  i {
-   color: white;
+   color: #9006ac;
+   margin: 20px;
    
  }
+
+ .sub-section {
+   display: flex;
+   justify-content: space-around;
+   padding: 80px;
+ }
+
+ .headshot {
+   width: 460px;
+ }
+
+ .headshot-container {
+   display: flex;
+   align-items: center;
+ }
+ 
