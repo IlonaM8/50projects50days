@@ -168,6 +168,11 @@ footer {
      flex-wrap: wrap;
    }
 
+   .sub-section-container {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
 
  }
 
@@ -246,3 +251,70 @@ a {
     display: none;
   }
 }
+
+
+/*contact me section*/
+
+.sub-section-container{
+  display: flex;
+  justify-content: space-around;
+
+  
+}
+
+.container-form {
+ display: flex;
+ width: 300px;
+  margin: 0px;
+}
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
+
+
+
+.form-control {
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: rgb(220, 202, 236);
+}
+
+
+
+
