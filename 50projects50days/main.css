@@ -29,7 +29,6 @@ body {
 
 section {
   background-color: white;
-  border: solid black 1px;
 }
 
 .hero{
@@ -40,8 +39,10 @@ font-size: 30px;
 }
 
 footer {
-  height: 500px;
   background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
  }
 
 
@@ -58,6 +59,9 @@ footer {
    justify-content: space-around;
    font-size: 20px;
  }
+
+ 
+
 
  li {
   text-decoration: none;
@@ -124,8 +128,8 @@ footer {
  margin: 30px;
  }
 
- i {
-   color: #9006ac;
+ #social-icons{
+   color: #2f0438;
    margin: 20px;
    
  }
@@ -145,3 +149,100 @@ footer {
    align-items: center;
  }
  
+ /* projects section*/
+ .project-card {
+   width: 300px;
+   height: 500px;
+   box-shadow: 5px 5px 20px violet;
+   margin: 10px;
+ }
+
+ .project-container {
+   display: flex;
+   justify-content: space-around;
+ }
+
+ @media only screen and (max-width: 1000px) {
+   .project-container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+
+ }
+
+ .sub-section-alternative {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 80px;
+ }
+
+ .subtext {
+   font-size: 15px;
+   font-weight: 300;
+ }
+
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+ text-decoration: none;
+ color: #9006ac;
+}
+
+a {
+  text-decoration: none;
+  color: black; 
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width:1000px) {
+
+  .hamburger {
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 20px;
+    color: #2f0438;
+    display: block;
+    align-self: flex-end;
+    
+  }
+
+  ul {
+    display: none;
+    background-color: #fdfb8b;
+    margin: 0px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #fdfb8b;
+  }
+
+
+  .logo {
+    display: none;
+  }
+}
