@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   height: 100vh;
+  
 }
 
 
@@ -22,6 +23,7 @@ h4{
   margin: 5px;
   text-transform: uppercase;
 }
+
 
 
 .counter{
