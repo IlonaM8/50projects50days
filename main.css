@@ -34,7 +34,7 @@ section {
 
 
 .container {
-  border: #e9ec19 solid 2px;
+  /*border: #e9ec19 solid 2px;*/
   width: 100%;
   
 }
@@ -126,7 +126,7 @@ footer {
    height: 100%;
    justify-content: space-between;
    align-items: center;
-   border: #219c16 solid 2px;
+   /*border: #219c16 solid 2px;*/
  }
 
  .socials {
@@ -165,13 +165,13 @@ footer {
 
  .headshot {
    width: 460px;
-   border: #f37b35 solid 2px;
+   /*border: #f37b35 solid 2px;*/
  }
 
  .headshot-container {
    display: flex;
    align-items: center;
-   border: #86169c solid 2px;
+   /*border: #86169c solid 2px;*/
  }
  
 
@@ -188,7 +188,7 @@ footer {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   border: #79ece3 solid 2px;
+   /*border: #79ece3 solid 2px;*/
  }
 
 

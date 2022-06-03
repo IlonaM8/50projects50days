@@ -8,11 +8,11 @@ let speed = 300/ speedEl.value
 writeText()
 
 function writeText() {
-textEl.innerHTML = text.slice(0, idx)
+  textEl.innerHTML = text.slice(0, idx)
 
-idx++
+  idx++
 
-if(idx > text.length) {
+  if(idx > text.length) {
     idx = 1
 }
 
