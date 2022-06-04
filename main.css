@@ -39,12 +39,15 @@ section {
   
 }
 
+/*
 .hero {
 background-image: linear-gradient(190deg, #fffc5f,#e258d6);
 height: 100vh;
 color: black;
 font-size: 30px;
-}
+} */
+
+
 
 footer {
   background-color: black;
@@ -90,7 +93,17 @@ footer {
    margin: 0;
    font-size: 30px;
    font-weight: 300;
+   
  }
+
+ /*What I have learned*/
+span.js-learning {
+  color: #40ad00;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  
+}
   
  .hero-text{
    margin-left: 80px;
@@ -177,13 +190,20 @@ footer {
 
  /* projects section*/
  .project-card {
-   width: 250px;
-   height: 500px;
+   width: 350px;
+   height: 600px;
    box-shadow: 5px 5px 20px violet;
    margin: 10px;
    border-radius: 50px;
  }
 
+ .project-card p {
+   font-size: 15px;
+   text-align: center;
+   padding: 20px;
+ }
+
+ 
  .project-container {
    display: flex;
    justify-content: space-around;
@@ -191,8 +211,13 @@ footer {
    /*border: #79ece3 solid 2px;*/
  }
 
+ /*for small screen*/
 
  @media only screen and (max-width: 1000px) {
+
+  
+  
+    
    .project-container {
      display: flex;
      flex-wrap: wrap;
@@ -216,6 +241,7 @@ footer {
  .subtext {
    font-size: 15px;
    font-weight: 300;
+   
  }
 
 .project-image {
@@ -249,7 +275,18 @@ a {
   outline: 0;
 }
 
-@media only screen and (max-width:1000px) {
+
+
+
+
+
+
+
+/*for small screen*/
+@media only screen and (min-width:320px) {
+
+  
+
 
   .hamburger {
     border: 0;
@@ -282,7 +319,17 @@ a {
   .logo {
     display: none;
   }
+
+  .sub-section-container{
+    display: flex;
+    width: 100%;
+  }
+
+
 }
+
+
+
 
 
 /*contact me section*/
@@ -292,8 +339,6 @@ a {
   flex-direction: column;
   justify-content: space-around;
   /*border: 2px  solid rgb(223, 57, 238);*/
-
-  
 }
 
 .container-form {
