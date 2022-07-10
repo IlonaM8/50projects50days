@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/*This is an universal selector, which means I want to apply this to everything*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
+body {
+  font-family: "Open Sans", "sans-serif";
+  background-color: rgba(24, 218, 176, 0.7);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.phone{
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  height: 600px;
+  width: 340px;
+}
+
+.phone .content{
+  opacity: 0; 
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+nav li{
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li p{
+  font-size: 12px;
+  margin: 2px 0;
+
+}
+
+nav ul li:hover, 
+nav ul li.active {
+color: #8e44ad;
+}
+
